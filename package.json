@@ -1,0 +1,19 @@
+{
+  "name": "gulp-exercise",
+  "version": "1.0.0",
+  "description": "Learn gulp by building an awesome development environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjuSnack/gulp-exercise.git"
+  },
+  "author": "manjuSnack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manjuSnack/gulp-exercise/issues"
+  },
+  "homepage": "https://github.com/manjuSnack/gulp-exercise#readme"
+}
