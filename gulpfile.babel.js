@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import gpug from "gulp-pug";
 import del from "del";
+import ws from "gulp-webserver";
 
 const routes = {
   pug: {
@@ -15,8 +16,13 @@ const pug = () =>
 // The build directory delete
 const clean = async () => del(["build"]);
 
+const webserver = () =>
+  gulp.src("build").pipe(ws({ livereload: true, open: true }));
+
 const prepare = gulp.series([clean]);
 
 const assets = gulp.series([pug]);
 
-export const dev = gulp.series([prepare, assets]);
+const postDev = gulp.series([webserver]);
+
+export const dev = gulp.series([prepare, assets, postDev]);
