@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/manjuSnack/gulp-exercise#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1"
   },
   "dependencies": {
     "@babel/core": "^7.20.5",
