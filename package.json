@@ -7,6 +7,9 @@
     "dev": "gulp dev",
     "build": "gulp build"
   },
+  "brawserslist": [
+    "last 2 version"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manjuSnack/gulp-exercise.git"
@@ -19,6 +22,8 @@
   "homepage": "https://github.com/manjuSnack/gulp-exercise#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-csso": "^4.0.1",
     "gulp-image": "^6.2.1"
   },
   "dependencies": {
