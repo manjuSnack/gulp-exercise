@@ -15,8 +15,8 @@ const sass = gulpSass(nodeSass);
 
 const routes = {
   pug: {
-    watch: "src/**/*.pug", // Monitering
-    src: "src/*.pug", // Comfile
+    watch: "src/**/*.pug",
+    src: "src/*.pug",
     dest: "build",
   },
   img: {
@@ -38,11 +38,7 @@ const routes = {
 const pug = () =>
   gulp.src(routes.pug.src).pipe(gpug()).pipe(gulp.dest(routes.pug.dest));
 
-// The build directory delete
 const clean = async () => del(["build/", ".publish"]);
-
-const webserver = () =>
-  gulp.src("build").pipe(ws({ livereload: true, open: true }));
 
 const styles = () =>
   gulp
@@ -68,9 +64,11 @@ const js = () =>
     )
     .pipe(gulp.dest(routes.js.dest));
 
+const webserver = () =>
+  gulp.src("build").pipe(ws({ livereload: true, open: true }));
+
 const gh = () => gulp.src("build/**/*").pipe(ghPages());
 
-// Monitering
 const watch = () => {
   gulp.watch(routes.pug.watch, pug);
   gulp.watch(routes.img.src, img);
