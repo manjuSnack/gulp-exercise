@@ -1,5 +1,7 @@
 # Gulp Exercise
 
+변경날짜 : 2022-12-14
+
 Gulp에 대한 개발자 환경을 설정하는 방법의 학습한 내용을 기술하였습니다.
 😰
 
@@ -27,7 +29,7 @@ $ npm i gulp @babel/{register,core,preset-env} gulp-pug del@4.1.1 gulp-webserver
 
 <!-- Table -->
 
-| API              | 설명                                                                                            |
+| 설치한 API              | 설명                                                                                            |
 | ---------------- | ----------------------------------------------------------------------------------------------- |
 | gulp             | Gulp에 대한 개발자에 도움이 되는 환경설정을 위한 API                                            |
 | gulp-pug         | Compile 과정 중 .pug를 .html로 확장자 변경하여 저장하기 위한 API                                |
